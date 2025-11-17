@@ -13,7 +13,7 @@ function Login() {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:8080/api/login", {
+      const response = await axios.post("http://localhost:8080/api/chat/login", {
         username,
         password,
       });

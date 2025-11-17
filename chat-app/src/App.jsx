@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Login from "./login.jsx";
+import Login from "./components/login/login.jsx";
 
 const router = createBrowserRouter([
   {
@@ -7,7 +7,7 @@ const router = createBrowserRouter([
     Component: Login,   // root path
   },
   {
-    path: "/login",
+    path: "/chat/login",
     Component: Login,
   },
 ]);
