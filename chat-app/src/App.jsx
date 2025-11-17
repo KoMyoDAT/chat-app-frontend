@@ -1,16 +1,19 @@
-import { useState } from 'react'
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Login from "./login.jsx";
 
-
+const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: Login,   // root path
+  },
+  {
+    path: "/login",
+    Component: Login,
+  },
+]);
 
 function App() {
-
-  return (
-    <>
-      <h1 class="text-3xl font-bold underline">
-          Hello world!
-      </h1>
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
